@@ -22,7 +22,13 @@ describe('PrimeFinder', function () {
 
     it('should be an object instance method of PrimeFinder', function () {
 
+      expect(pf.getPrimeNumber).to.exist;
       expect(pf.getPrimeNumber).to.be.a('function');
+    })
+
+    it('should not be a member of the PrimeFinder class', function () {
+
+      expect(PrimeFinder.getPrimeNumber).to.be.undefined;
     })
   })
 })
