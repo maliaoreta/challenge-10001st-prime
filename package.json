@@ -9,7 +9,7 @@
     "mocha": "^2.4.5"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha"
+    "test": "node_modules/.bin/mocha --watch"
   },
   "repository": {
     "type": "git",
