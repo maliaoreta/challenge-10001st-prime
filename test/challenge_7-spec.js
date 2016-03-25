@@ -30,5 +30,12 @@ describe('PrimeFinder', function () {
 
       expect(PrimeFinder.getPrimeNumber).to.be.undefined;
     })
+
+    it('should return the nth prime number', function () {
+
+      var secondPrimeTest = new PrimeFinder(6);
+      expect(secondPrimeTest.getPrimeNumber()).to.be.a('number'); 
+      expect(secondPrimeTest.getPrimeNumber()).to.equal(13);     
+    })
   })
 })
